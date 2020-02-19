@@ -1,6 +1,6 @@
 # Dare To Cross - Game
 
-A river crossing game with multiple level made for the ISS Assignment.
+A river crossing game with multiple levels.
 
 Open documentation.txt to read the documentation.
 

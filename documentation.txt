@@ -1,0 +1,46 @@
+This is the documentation of the game which details the design features and ideas used in the game.
+
+Name of the Game: Dare To Cross
+
+Description:
+
+This is a multiplayer game with two players and different levels. In each level, the player will get spawned in the top partition
+or the bottom partition depending upon the player number. The spawn position is random. Player 1 will be spwaned in the bottom-most
+partition, so from there he has to reach the top-most partition to finish the round properly. If in case he gets crashed with any of
+the still(thorns) or moving(fish, shark) obstacles the score he gets for that round will be zero. After player 1's round,
+player 2's round will start. He will be spawned in the top-most partition[below the partition which displays player stats],
+and would have to reach the bottom-most partition to win the round.
+
+The number of obstacles discussed below are per partition which has those moving/fixed obstacles.
+
+As the player progresses through the levels the speed, size, and the number of moving obstacles will also change. In the levels 1 and 2,
+the moving obstacles are relatively small normal fishes, but once the player reaches level 3, the moving obstacles change to 1-2 sharks.
+The number of moving obstacles after level 3 will be 1-2 sharks which is decided randomly which adds a level of uncertainty to each round,
+which in turn will engage the actual players.
+
+After level 4, the number of fixed obstacles will be between 3-5. This is also decided randomly.
+
+
+Final score is calculated using the formula,
+    Final score = (score for the player by crossing obstacles) + 0.1 * Time left for the player
+
+Instructions for the game:
+
+Run dare_to_cross.py to start the game.
+
+Once the game opens, you will be greeted with an intro screen, which challenges you to cross the game[Which is also the name of the game].
+
+You have to press enter to start the game.
+
+Once the game starts, the player 1's round will start by default. After player 1's round, player 2's round will start.
+
+The game happens spontaneously and the next round starts right after the previous round with an interval of only two seconds.
+
+If you want to pause while you are in game, press escape. Then you will be in a screen from where you can choose to continue the game,
+or quit the game.
+
+Once you are in the game, the keys for the movement are arrow-keys.
+To move up: Arrow key up
+To move down: Arrow key down
+To move left: Arrow key left
+To move right: Arrow key right
